@@ -50,12 +50,12 @@ bool isFieldLinesEnabled = true;
 
 // bool isFieldImageEnabled = false;
 
-MeshAsset lineMeshP;
-MeshAsset lineMeshN;
+// MeshAsset lineMeshP;
+// MeshAsset lineMeshN;
 MeshAsset circleMeshP;
 MeshAsset circleMeshN;
-MeshAsset squareMeshP;
-MeshAsset squareMeshN;
+// MeshAsset squareMeshP;
+// MeshAsset squareMeshN;
 MeshAsset triangleMeshP;
 MeshAsset triangleMeshN;
 
@@ -261,12 +261,12 @@ void onStart()
   
 //  addMenuElement(&rightClickMenu, MENU_ELEM_TYPE_BUTTON, "Field image", ACTION_TOGGLE_FIELD_IMAGE);
 
-  lineMeshP = generateMeshAsset(MESHASSET_LINE, NANO_COULOMB);
-  lineMeshN = generateMeshAsset(MESHASSET_LINE, -NANO_COULOMB);
+//  lineMeshP = generateMeshAsset(MESHASSET_LINE, NANO_COULOMB);
+//  lineMeshN = generateMeshAsset(MESHASSET_LINE, -NANO_COULOMB);
   circleMeshP = generateMeshAsset(MESHASSET_CIRCLE, NANO_COULOMB);
   circleMeshN = generateMeshAsset(MESHASSET_CIRCLE, -NANO_COULOMB);
-  squareMeshP = generateMeshAsset(MESHASSET_SQUARE, NANO_COULOMB);
-  squareMeshN = generateMeshAsset(MESHASSET_SQUARE, -NANO_COULOMB);
+//  squareMeshP = generateMeshAsset(MESHASSET_SQUARE, NANO_COULOMB);
+//  squareMeshN = generateMeshAsset(MESHASSET_SQUARE, -NANO_COULOMB);
   triangleMeshP = generateMeshAsset(MESHASSET_TRIANGLE, NANO_COULOMB);
   triangleMeshN = generateMeshAsset(MESHASSET_TRIANGLE, -NANO_COULOMB);
   
@@ -280,12 +280,12 @@ void onEnd()
   destroyPointChargeBuffer();
   destroyChargeMeshBuffer();
   destroyChunkBuffer();
-  free(lineMeshP.charges);
-  free(lineMeshN.charges);
+//  free(lineMeshP.charges);
+//  free(lineMeshN.charges);
   free(circleMeshP.charges);
   free(circleMeshN.charges);
-  free(squareMeshP.charges);
-  free(squareMeshN.charges);
+//  free(squareMeshP.charges);
+//  free(squareMeshN.charges);
   free(triangleMeshP.charges);
   free(triangleMeshN.charges);
   destroyMenu(&rightClickMenu);

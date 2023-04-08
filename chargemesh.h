@@ -3,9 +3,9 @@
 
 #include "mat3.h"
 
-#define MESHASSET_LINE      0
+// #define MESHASSET_LINE      0
 #define MESHASSET_CIRCLE    1
-#define MESHASSET_SQUARE    2
+// #define MESHASSET_SQUARE    2
 #define MESHASSET_TRIANGLE  3
 
 typedef struct MeshAsset
@@ -31,14 +31,14 @@ MeshAsset generateMeshAsset(unsigned int type, float charge)
   
   switch (type)
   {
-  case MESHASSET_LINE:
+/*  case MESHASSET_LINE:
     asset.chargeCount = 100;
     asset.charges = (PointCharge*)malloc(asset.chargeCount * sizeof(PointCharge));
     
     for (int i = 0; i < 100; i++)
       asset.charges[i] = (PointCharge){ charge, (Vector2){ (float)i / 20.0f, 0.0f } };
     
-    break;
+    break; */
   case MESHASSET_CIRCLE:
     asset.chargeCount = 72;
     asset.charges = (PointCharge*)malloc(asset.chargeCount * sizeof(PointCharge));
@@ -47,7 +47,7 @@ MeshAsset generateMeshAsset(unsigned int type, float charge)
       asset.charges[i] = (PointCharge){ charge, (Vector2){ degcos((float)i * 5.0f) * 2.5f, degsin((float)i * 5.0f) * 2.5f } };
     
     break;
-  case MESHASSET_SQUARE:
+/*  case MESHASSET_SQUARE:
     asset.chargeCount = 200;
     asset.charges = (PointCharge*)malloc(asset.chargeCount * sizeof(PointCharge));
     
@@ -63,7 +63,7 @@ MeshAsset generateMeshAsset(unsigned int type, float charge)
     for (int i = 0; i < 50; i++)
       asset.charges[i + 150] = (PointCharge){ charge, (Vector2){ -2.5f, (float)i / -10.0f + 2.5f } };
 
-    break;
+    break; */
   case MESHASSET_TRIANGLE:
     asset.chargeCount = 61;
     asset.charges = (PointCharge*)malloc(asset.chargeCount * sizeof(PointCharge));
