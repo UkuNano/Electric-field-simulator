@@ -4,7 +4,7 @@
 
 #include "raylib.h"
 
-#define RAYMATH_IMPLEMENTATION
+// #define RAYMATH_IMPLEMENTATION
 #include "raymath.h"
 
 #include "global.h"
@@ -62,6 +62,7 @@ MeshAsset triangleMeshN;
 unsigned int getActionFromInput()
 {
   if (IsKeyPressed(KEY_DELETE) || IsKeyPressed(KEY_BACKSPACE)) return ACTION_DELETE;
+  return ACTION_NONE;
 }
 
 void handleAction(unsigned int actionId)

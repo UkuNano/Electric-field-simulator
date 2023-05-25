@@ -51,7 +51,7 @@ void computeChunk(unsigned int index)
     chunks[index].vectors[i] = getFieldStrength( (Vector2){ chunks[index].position.x + i % 8, chunks[index].position.y + i / 8 } );
 }
 
-bool createChunk(Vector2int pos)
+void createChunk(Vector2int pos)
 { 
   unsigned int newIndex = chunkCount;
   bool isReplacingDisabledChunk = false;

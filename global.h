@@ -87,4 +87,4 @@ Vector2 toVec2(Vector3 v)
   return (Vector2){ v.x, v.y };
 }
 
-#endif GLOBAL_H
+#endif // GLOBAL_H
